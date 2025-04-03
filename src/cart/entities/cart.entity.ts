@@ -1,4 +1,3 @@
-// src/cart/entities/cart.entity.ts
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
 import { CartItem } from './cart-item.entity';
 
@@ -15,10 +14,10 @@ export class Cart {
   @Column({ name: 'user_id', type: 'uuid' })
   userId: string;
 
-  @Column({ name: 'created_at' })
+  @Column({ name: 'created_at', type: 'timestamp' })
   createdAt: Date;
 
-  @Column({ name: 'updated_at' })
+  @Column({ name: 'updated_at', type: 'timestamp' })
   updatedAt: Date;
 
   @Column({

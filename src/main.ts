@@ -1,4 +1,5 @@
 import { NestFactory } from '@nestjs/core';
+import 'reflect-metadata';
 
 import helmet from 'helmet';
 
